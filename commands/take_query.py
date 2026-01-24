@@ -6,6 +6,7 @@ from commands.speak import speak
 from commands.take_command import take_command
 from commands.tell_day import tell_day
 from commands.tell_time import tell_time
+from commands.genai import genai
 
 def take_query():
     hello()
@@ -36,6 +37,10 @@ def take_query():
         elif "your name" in query:
             speak("I am Alexis, your desktop assistant")
             continue
+        else:
+            genai(query)
+            continue
+            
 
             
 
